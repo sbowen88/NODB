@@ -1,28 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 .App {
+  text-align: center;
+  font-family:'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+h1{
+ font-family:'Montserrat', sans-serif;
+ color:black;
+}
+.sprite{
+width: 300px;
+height: 400px;
+background-size: cover;
+}
+.screenParent{
+  height: 800px;
+  width: 100VW;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: stretch;
+  align-content: stretch;
+  background:#b3b3b3;
+}
+.screen{
+height: 800px;
+width: 1000px;
+background: url('https://hostr.co/file/uwPtGh7w599O/GameboyBlack.png') no-repeat center ;
+background-size: cover;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.searchBar{
+  height: 100px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+.output{
+  background-size: cover;
+  width: 30%;
+  height: 40%;
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+  justify-content: center;
+	align-items: center;
+  background-image: url('http://gran4u.xtgem.com/Pokedex.png');
+  background-size: cover;
+}
+.pokemonInfo{
+  font-size: 20px;
+}
+.pokedex{
+  height: 500px;
+  width: 100vw;
+
+}
+
+#search{
+  width: 400px;
+  border-radius: 5px;
+  font-size: 22px;
+}
+#goButton{
+  width:70px;
+  height: 100px;
+  font-size: 20px;
+  border-radius: 5px;
+ ;
+}
+#goButton:hover{
+  width:70px;
+  height: 100px;
+  font-size: 20px;
+  border-radius: 5px;
+  color: blue;
+  box-shadow: 0px 4px 0px 0px #404040;
+ ;
+}
+input::placeholder {
+  color: grey;
+  font-size: 30px;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
